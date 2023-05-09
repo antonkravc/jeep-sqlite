@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "build": "stencil build --docs",
+    "core": "tsc -P tsconfig.core.json",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
@@ -33,7 +34,8 @@
     "jest": "^27.0.3",
     "jest-cli": "^27.4.5",
     "puppeteer": "^19.7.2",
-    "rollup-plugin-node-polyfills": "^0.2.1"
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "typescript": "^5.0.4"
   },
   "keywords": [
     "SQLite",

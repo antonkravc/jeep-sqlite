@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/core",
+    "declaration": true
+  },
+  "include": [],
+  "files": ["./src/components/jeep-sqlite/jeep-sqlite-core.ts"]
+}
