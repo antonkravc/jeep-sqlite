@@ -72,16 +72,16 @@ export class JeepSqlite {
   //* Watch on Property Changes *
   //*****************************
 
-  constructor(options: {
+  constructor(options?: {
     autoSave?: boolean;
     wasmPath?: string;
     pickText?: string;
     saveText?: string;
   }) {
-    this.autoSave = options.autoSave ?? false;
-    this.wasmPath = options.wasmPath;
-    this.pickText = options.pickText;
-    this.saveText = options.saveText;
+    this.autoSave = options?.autoSave ?? false;
+    this.wasmPath = options?.wasmPath;
+    this.pickText = options?.pickText;
+    this.saveText = options?.saveText;
     this.componentWillLoad().then(() => {
       this.componentDidLoad();
     });
